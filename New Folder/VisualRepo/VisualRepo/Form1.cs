@@ -61,7 +61,9 @@ namespace VisualRepo
             while(isstream)
             {
                 await Task.Run( () => updateTask(textBox1.Text));
+                await Task.Delay(1000);
             }
+
         }
     }
 }
